@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: atendimento
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/atendimento}
+  jackson:
+    default-property-inclusion: non_null
+
+cad:
+  api:
+    base-url: ${CAD_API_BASE_URL:https://homcadweb.serpro.gov.br/cad-agente-campo-servico}
+
+logging:
+  level:
+    br.gov.serpro.atendimento: INFO
